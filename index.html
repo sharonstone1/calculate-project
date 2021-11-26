@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My calculator App</title>
+    <link href="/Second project/index.css" rel="stylesheet" />
+  </head>
+  <body>
+      <h1 class="heading">My Calculator App</h1>
+      <form class="container">
+        <table class="calculator">
+            <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="result"  disabled/></td>
+            <td> <input class="button" type="button" id='clear' value="C" onclick="clearScreen()" style="background-color: #6DD47E" /></td>
+            </tr>
+
+            <div class="calculator_keys">
+            <tr>
+            <td><input class="button" type="button" id='num1' value="1"  onclick="displayValue('1')" /></td>
+            <td> <input  class="button"  type="button" id='num2' value="2" onclick="displayValue('2')" /></td>
+            <td><input  class="button" type="button" id='num3'  value="3" onclick="displayValue('3')" /></td>
+            <td><input  class="key_operator" type="button"  id="divide" value="/"  onclick="applyOperator('/')" /></td>
+            </tr>
+      
+            <tr>
+              <td> <input class = "button" type = "button"  id='num4'  value = "4" onclick = "displayValue('4')" /> </td>
+              <td> <input class = "button" type = "button"  id='num5'  value = "5" onclick = "displayValue('5')" /> </td>
+              <td> <input class = "button" type = "button"  id='num6'  value = "6" onclick = "displayValue('6')" /> </td>
+              <td> <input class = "key_operator" type = "button" value = "-" id="subtract"  onclick = "applyOperator('-')" /> </td>
+            </tr>
+      
+            <tr>
+              <td> <input class = "button" type = "button"  id='num7'  value = "7" onclick = "displayValue('7')" /> </td>
+              <td> <input class = "button" type = "button"  id='num8'  value = "8" onclick = "displayValue('8')" /> </td>
+              <td> <input class = "button" type = "button"  id='num9'  value = "9" onclick = "displayValue('9')" /> </td>
+              <td> <input class = "key_operator" type = "button"   value = "+"  id="add" onclick = "applyOperator('+')" /> </td>
+            </tr>
+            <tr>
+            <td> <input class = "key_operator" type = "button" value = "."  id="decimal"  onclick = "displayValue('.')" /> </td>
+            <td> <input class = "button" type = "button"  id='num0'  value = "0" onclick = "displayValue('0')" /> </td>
+            <td> <input class = "key_equal" type = "button" value = "="  id="calculate" onclick = "applyOperator('=')" style = "background-color: #6DD47E;" /> </td>
+            <td> <input class = "key_operator" type = "button" value = "*"  id="multiply" onclick = "applyOperator('*')" /> </td>
+            </tr>
+        </div>
+          </table>
+
+      </form>
+
+      <!-- <script src="/Second project/index.js"></script> -->
+    <script src="/Second project/script.js"></script>
+  </body>
+</html>
